@@ -5,9 +5,9 @@ body{
 }
 
 .navbar{
-  margin: 0px 50px 0px 50px;
+  margin: 0px 80px 50px 80px;
     color: #E03C31;
-    height: 60px;
+    height: 80px;
     border-bottom: 1px solid rgb(177, 165, 165);
 }
 .navbar ul{
@@ -16,7 +16,7 @@ body{
 
 .navbar ul li{
     display: inline;
-    padding: 5px;
+    padding: 0px;
 }
 
 .slogo{
