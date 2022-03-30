@@ -1,0 +1,57 @@
+body{
+    background-image: url("/JS/images/background-image.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+#form-container{
+    background-color: white;
+    width: 30%;
+    
+}
+
+.header{
+    padding-left: 20px;
+    display: flex;
+}
+
+.box,.box1, #spouseBox, #otherDetails  {
+    margin-left: 150px;
+}
+
+.genderButton, .statusButton{
+    margin-left: 150px;
+    
+
+}
+
+.bottom-button {
+    display: flex;
+    justify-content: space-around;
+}
+
+.button {
+    border-radius: 10px;
+    text-align: center;
+    width: 120px;
+    height: 25px;
+}
+
+.error {
+    margin-left: 150px;
+    border: 1px red solid;
+}
+
+#error-span {
+    font-size: 10px;
+    justify-content: center;
+    color: red;
+    padding-top: 15px;
+    font-weight: bold;
+    display: none;
+}
+
+

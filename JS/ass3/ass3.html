@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
+    <link rel="stylesheet" href="./ass3.css">
+    <script src="./ass3.js"></script>
+</head>
+<body>
+    <form id="form-container" name="form">
+        <div class="header">
+            <h2>Employee Input Form</h2>
+        </div>
+        <table>
+            <tr>
+                <td>Name<span style="color: red;">*</span></td>
+                <td>
+                    <input type="text" id="firstName" onload="foc(this.id)" class="box1">
+                    <span style="margin-left: 150px;">First Name</span>
+                    <input type="text" class="box" id="middleName">
+                    <span style="margin-left: 150px;">Middle Name</span>
+                    <input type="text" class="box" id="lastName">
+                    <span style="margin-left: 150px;">Last Name</span>
+                </td>
+            </tr>
+            <tr class="gender">
+                <td>Gender<span style="color: red;">*</span></td>
+                <td style="padding-top: 10px;" id="selectedGender">
+                    <input type="radio" id="1" class="genderButton" value="male" name="gender">
+                    <label for="1">Male</label>
+                    <input type="radio" id="2" class="genderButton" value="female" name="gender">
+                    <label for="2">Female</label>
+                    <input type="radio" id="3" class="genderButton" value="others" name="gender">
+                    <label for="3">Others</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Maritial Status<span style="color: red;">*</span></td>
+                <td>
+                    <select class="statusButton" onchange="enableTextBox(this.value);" id="maritialStatus" name="maritialStatus">
+                            <option value="" disabled selected>Select</option>
+							<option value="single">Single</option>
+							<option value="married">Married</option>
+							<option value="unmarried">Unmarried</option>
+							<option value="divorced">Divorced</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Spouse's Name</td>
+                <td>
+                    <input type="text" id="spouseBox" name="spouseBox"/>
+                    <span style="margin-left: 150px;">Name of Spouse</span>
+                </td>
+            </tr>
+            <tr>
+                <td>Other Details</td>
+                <td>
+                    <textarea id="otherDetails" rows="5" cols="20" style="resize: none;"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="termsAndConditions" id="4"><label for="4">I accept <a href="">Terms and Conditions </a></label></td>
+            </tr>
+        </table>
+        <div class="bottom-button">
+            <div>
+                <button class="button" onclick="resetFunction()">RESET</button>
+            </div>
+
+            <div>
+                <button class="button" onclick="validateForm()">SAVE</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
