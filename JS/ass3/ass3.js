@@ -40,16 +40,21 @@ function validateForm(){
         noError=false;
         alert("Enter first name")
         fname.focus()
+        fname.style.borderColor="red "
+        return false    
     }
     else if(mname.value===""){
         noError=false;
         alert("Enter middle name")
-        mname.focus()
+        mname.style.borderColor="red "
+        return false    
     }
     else if(lname.value===""){
         noError=false;
         alert("Enter last name")
         lname.focus()
+        lname.style.borderColor="red "
+        return false    
     }else{
         noError=false
         var genderSelected = false;
@@ -66,20 +71,30 @@ function validateForm(){
     if(fname.value.indexOf(' ')>=0){
         noError=false
         alert("Enter first name without space")
+        fname.style.borderColor="red "
+        return false    
     }else if(mname.value.indexOf(' ')>=0){
         noError=false
         alert("Enter middle name without space")
+        mname.style.borderColor="red "
+        return false    
     }else if(lname.value.indexOf(' ')>=0){
         noError=false
         alert("Enter last name without space")
+        lname.style.borderColor="red "
+        return false    
     }else if(enableTextBox(status.value)){
         if(spouse.value===""){
             noError=false
             alert("Enter spouse name")
+            spouse.style.borderColor="red "
+            return false    
         }
         else if(spouse.value.indexOf(' ') >= 0){
             noError=false
             alert("Enter spouse name without space")
+            spouse.style.borderColor="red "
+            return false    
         }
     }
     if(!tnc.checked && noError){
