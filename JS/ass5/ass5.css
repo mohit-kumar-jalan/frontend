@@ -1,0 +1,65 @@
+
+
+#stopwatch{
+    display: none;
+
+}
+
+#button{
+    display: none;
+    justify-content:flex-start;
+}
+
+#hour, #minute, #second{
+    display: flex;
+    flex-direction: row;
+    color: blueviolet;
+    font-size: 100px;
+}
+
+#addtimer{
+    width: 150px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    padding:12px;
+    align-content: center;
+    background-color:cyan;
+    color:darkolivegreen;
+    font-size: larger;
+    font: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.start, .stop, .pause, .reset{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: large;
+    font: bold;
+}
+
+.start{
+    background-color: burlywood;
+    
+}
+
+.stop{
+    background-color: crimson;
+}
+
+.pause{
+    background-color: chocolate;
+}
+
+.reset{
+    background-color:forestgreen;
+}

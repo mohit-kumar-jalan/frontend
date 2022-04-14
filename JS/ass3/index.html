@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Input Form</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+</head>
+<body>
+    <div id="success">
+    <div id="container">
+        <form action="" id="form-container" name="form">
+            <div class="header">
+                <h2>Employee Input Form</h2>
+            </div>
+            <table class="table-container">
+                <tr>
+                    <td>
+                        <label class="leftName">Name<span class="star">*</span></label>
+                    </td>
+                    <td class="formRight">
+                        <div class="box">
+                            <input type="text" id="first name">
+                            <span class="boxName">First Name</span>
+                            <input type="text" id="middle name">
+                            <span class="boxName">Middle Name</span>
+                            <input type="text"id="last name">
+                            <span class="boxName">Last Name</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="leftName">Gender<span class="star">*</span></label>
+                    </td>
+                    <td class="formRight">
+                        <div class="gender">
+                            <input type="radio" id="male" value="male" name="gender">
+                            <label for="male">Male</label>
+                            <br>
+                            <input type="radio" id="female" value="female" name="gender" >
+                            <label for="female">Female</label>
+                            <br>
+                            <input type="radio" id="others" value="others" name="gender" >
+                            <label for="others">Others</label>
+                            <br>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="leftName">Maritial Status<span class="star">*</span></label>
+                    </td>
+                    <td class="formRight">
+                        <div>
+                            <select id="maritialStatus" class="statusButton" name="maritialStatus" onchange="enableTextBox(this.value);">
+								<option value="select" disabled selected>Select</option>
+							    <option value="single">Single</option>
+							    <option value="married">Married</option>
+							    <option value="unmarried">Unmarried</option>
+							    <option value="divorced">Divorced</option>
+							</select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="leftName">Spouse Name</label>
+                    </td>
+                    <td class="formRight">
+                        <div>
+                            <input id="spouse name" type="text" name="spouseBox">
+                            <br>
+                            <span class="boxName">Name of Spouse</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="leftName">Other Details</label>
+                    </td>
+                    <td class="formRight">
+                        <div>
+                            <textarea name="otherDetails" rows="5"  id="otherDetails"></textarea>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p id="tnc"><input type="checkbox" name="termsAndConditions" id="tncs"><label for="tncs">I accept <a href="">Terms and Conditions </a></label></p>
+                    </td>
+                </tr>
+            </table>
+                <div class="bottom-button">
+                    <div>
+                        <button class="button" onclick="resetFunction()">RESET</button>
+                    </div>
+        
+                    <div>
+                        <button class="button" onclick="return validateForm()">SAVE</button>
+                    </div>
+                </div>
+                <div class="footerBorder">
+                    <span id="error-span">There are many errors on the form. Fix them first</span>
+                </div>
+        </form>
+    </div>
+    </div>
+</body>
+</html>

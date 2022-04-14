@@ -7,10 +7,10 @@
     <title>Assignment 2 Page 2</title>
     <script>
         function fun(){
-            document.getElementById("one").innerHTML=
-            `<dialog open>
-                <h1>Welcome on the page 2.</h1>
-                </dialog>`
+            document.getElementById("one").addEventListener("click",()=>{
+                alert("Dialog Box");
+                history.go()
+            })
         }
     </script>
 </head>

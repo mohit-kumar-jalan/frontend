@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    
+    <link rel="stylesheet" href="./ass5.css">
+</head>
+<body>
+    <button id="addtimer" onclick="addTimer()">Add timer</button>
+    <div id="stopwatch">
+        <div id="hour">00:</div>
+        <div id="minute">00:</div>
+        <div id="second">00</div>
+    </div>
+    <div id="button">
+        <button class="start" onclick="return start()">Start</button>
+        <button class="stop" onclick="return stop()">Stop</button>
+        <button class="pause" onclick="return stop()">Pause</button>
+        <button class="reset" onclick="return reset()">Reset</button>
+    </div>
+    <script src="./ass5.js"></script>
+</body>
+</html>
